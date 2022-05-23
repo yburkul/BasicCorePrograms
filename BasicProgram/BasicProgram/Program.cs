@@ -14,6 +14,7 @@ namespace BasicProgram
                 Console.WriteLine("1: For Leap Year");
                 Console.WriteLine("2: For Prime Number");
                 Console.WriteLine("3: For Find Largest Number");
+                Console.WriteLine("4: For Find Perfect Number");
                 Console.WriteLine("0: For Exit");
                 input = int.Parse(Console.ReadLine());
                 switch (input)
@@ -26,6 +27,9 @@ namespace BasicProgram
                         break;
                     case 3:
                         BasicCoreProgram.LargestNumber();
+                        break;
+                    case 4:
+                        BasicCoreProgram.PerfectNumber();   
                         break;
                     case 0:
                         Console.WriteLine("Exit\n");

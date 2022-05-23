@@ -69,5 +69,26 @@ namespace BasicProgram
                 Console.WriteLine("All Three Number are Equal");
             }
         }
+        public static void PerfectNumber()
+        {
+            int sum = 0;
+            Console.WriteLine("Enter a Number");
+            int number = int.Parse(Console.ReadLine());
+            for (int i = 1; i < number; i++)
+            {
+                if (number % i == 0)
+                {
+                    sum += i;
+                }
+            }
+            if (sum == number)
+            {
+                Console.WriteLine("It is a Perfect Number");
+            }
+            else
+            {
+                Console.WriteLine("It is not a Perfect Number");
+            }
+        }
     }
 }
