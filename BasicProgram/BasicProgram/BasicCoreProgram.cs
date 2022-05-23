@@ -90,5 +90,27 @@ namespace BasicProgram
                 Console.WriteLine("It is not a Perfect Number");
             }
         }
+        public static void Palindrome()
+        {
+            int reverse = 0;
+            int remainder;
+            Console.WriteLine("Enter a Number");
+            int number = int.Parse(Console.ReadLine());
+            int temp = number;
+            while(number != 0)
+            {
+                remainder = number % 10;
+                reverse = reverse * 10 + remainder;
+                number = number / 10;
+            }
+            if (temp == reverse)
+            {
+                Console.WriteLine("It is a Palindrome Number");
+            }
+            else
+            {
+                Console.WriteLine("It is not a Palindrome Number");
+            }
+        }
     }
 }
