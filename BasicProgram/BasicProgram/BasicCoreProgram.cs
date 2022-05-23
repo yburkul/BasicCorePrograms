@@ -43,5 +43,31 @@ namespace BasicProgram
                 Console.WriteLine("It is not a Prime Number");
             }
         }
+        public static void LargestNumber()
+        {
+            int numOne, numTwo, numThree;
+            Console.WriteLine("Enter a First Number");
+            numOne = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter a Second Number");
+            numTwo = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter a Third Number");
+            numThree = int.Parse(Console.ReadLine());
+            if (numOne > numTwo && numOne > numThree)
+            {
+                Console.WriteLine("First Number Is Greater Than Other Two Numbers");
+            }
+            else if (numTwo > numThree && numTwo > numOne)
+            {
+                Console.WriteLine("Second Number Is Greater Than Other Two Numbers");
+            }
+            else if (numThree > numTwo && numThree > numOne)
+            {
+                Console.WriteLine("Third Number Is Greater Than Other Two Numbers");
+            }
+            else
+            {
+                Console.WriteLine("All Three Number are Equal");
+            }
+        }
     }
 }
