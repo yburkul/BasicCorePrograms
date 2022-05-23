@@ -22,5 +22,26 @@ namespace BasicProgram
                 Console.WriteLine("It is not a Leap Year");
             }
         }
+        public static void PrimeNumber()
+        {
+            int count = 0;
+            Console.WriteLine("Enter a number");
+            int number = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= number; i++)
+            {
+                if (number % i == 0)
+                {
+                    count++;
+                }
+            }
+            if (count == 2)
+            {
+                Console.WriteLine("It is a Prime Number");
+            }
+            else
+            {
+                Console.WriteLine("It is not a Prime Number");
+            }
+        }
     }
 }

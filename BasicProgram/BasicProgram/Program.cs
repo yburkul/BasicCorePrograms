@@ -12,12 +12,16 @@ namespace BasicProgram
             {
                 Console.WriteLine();
                 Console.WriteLine("1: For Leap Year");
+                Console.WriteLine("2: For Prime Number");
                 Console.WriteLine("0: For Exit");
                 input = int.Parse(Console.ReadLine());
                 switch (input)
                 {
                     case 1:
                         BasicCoreProgram.LeapYear();
+                        break;
+                    case 2:
+                        BasicCoreProgram.PrimeNumber();
                         break;
                     case 0:
                         Console.WriteLine("Exit\n");
