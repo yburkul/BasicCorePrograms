@@ -17,6 +17,7 @@ namespace BasicProgram
                 Console.WriteLine("4: For Find Perfect Number");
                 Console.WriteLine("5: For Palindrome Number");
                 Console.WriteLine("6: For Reverse The Number");
+                Console.WriteLine("7: For Check Number is Even or Odd");
                 Console.WriteLine("0: For Exit");
                 input = int.Parse(Console.ReadLine());
                 switch (input)
@@ -38,6 +39,9 @@ namespace BasicProgram
                         break;
                     case 6:
                         BasicCoreProgram.ReverseNumber();
+                        break;
+                    case 7:
+                        BasicCoreProgram.OddEven();
                         break;
                     case 0:
                         Console.WriteLine("Exit\n");

@@ -128,5 +128,19 @@ namespace BasicProgram
             }
             Console.WriteLine("After Reverse the Number is: " + reverse);
         }
+        public static void OddEven()
+        {
+            int num;
+            Console.WriteLine("Enter a Number");
+            num = int.Parse(Console.ReadLine());
+            if (num % 2 == 0)
+            {
+                Console.WriteLine("It is Even Number");
+            }
+            else
+            {
+                Console.WriteLine("It is Odd Number");
+            }
+        }
     }
 }
