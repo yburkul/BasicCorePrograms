@@ -19,6 +19,7 @@ namespace BasicProgram
                 Console.WriteLine("6: For Reverse The Number");
                 Console.WriteLine("7: For Check Number is Even or Odd");
                 Console.WriteLine("8: For Swap Number");
+                Console.WriteLine("9: For Prime Factor");
                 Console.WriteLine("0: For Exit");
                 input = int.Parse(Console.ReadLine());
                 switch (input)
@@ -46,6 +47,9 @@ namespace BasicProgram
                         break;
                     case 8:
                         BasicCoreProgram.SwapNumber();
+                        break;
+                    case 9:
+                        BasicCoreProgram.PrimeFactor();
                         break;
                     case 0:
                         Console.WriteLine("Exit\n");
