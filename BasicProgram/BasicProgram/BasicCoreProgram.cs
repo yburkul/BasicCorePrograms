@@ -170,5 +170,18 @@ namespace BasicProgram
                 }
             }
         }
+        public static void Vowel()
+        {
+            Console.WriteLine("Enter a Letter: ");
+            char Letter = char.Parse(Console.ReadLine().ToLower());
+            if(Letter == 'a' || Letter == 'e' || Letter == 'i' || Letter == 'o' || Letter == 'u')
+            {
+                Console.WriteLine("Enter Letter is Vowel: " + Letter);
+            }
+            else
+            {
+                Console.WriteLine("Enter Letter is Consonant: " + Letter);
+            }
+        }
     }
 }
