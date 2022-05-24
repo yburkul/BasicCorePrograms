@@ -142,5 +142,19 @@ namespace BasicProgram
                 Console.WriteLine("It is Odd Number");
             }
         }
+        public static void SwapNumber()
+        {
+            int a,b;
+            Console.WriteLine("Enter a First number: ");
+            a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter a second Number: ");
+            b = int.Parse(Console.ReadLine());
+            a = a + b;
+            b = a - b;
+            a = a - b;
+
+            Console.WriteLine("After swap First Number: " + a);
+            Console.WriteLine("After swap Second Number: " + b);
+        }
     }
 }
