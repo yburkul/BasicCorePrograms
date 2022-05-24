@@ -16,6 +16,7 @@ namespace BasicProgram
                 Console.WriteLine("3: For Find Largest Number");
                 Console.WriteLine("4: For Find Perfect Number");
                 Console.WriteLine("5: For Palindrome Number");
+                Console.WriteLine("6: For Reverse The Number");
                 Console.WriteLine("0: For Exit");
                 input = int.Parse(Console.ReadLine());
                 switch (input)
@@ -34,6 +35,9 @@ namespace BasicProgram
                         break;
                     case 5:
                         BasicCoreProgram.Palindrome();
+                        break;
+                    case 6:
+                        BasicCoreProgram.ReverseNumber();
                         break;
                     case 0:
                         Console.WriteLine("Exit\n");

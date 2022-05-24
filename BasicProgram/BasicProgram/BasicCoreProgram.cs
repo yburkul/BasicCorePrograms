@@ -112,5 +112,21 @@ namespace BasicProgram
                 Console.WriteLine("It is not a Palindrome Number");
             }
         }
+        public static void ReverseNumber()
+        {
+            int reverse = 0;
+            int remainder;
+            int num;
+            Console.WriteLine("Enter a Number");
+            num = int.Parse(Console.ReadLine());
+            Console.WriteLine("Before Reverse the Number is: " + num);
+            while(num != 0)
+            {
+                remainder = num % 10;
+                reverse = reverse * 10 + remainder;
+                num = num / 10;
+            }
+            Console.WriteLine("After Reverse the Number is: " + reverse);
+        }
     }
 }
