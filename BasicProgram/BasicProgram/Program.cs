@@ -22,6 +22,7 @@ namespace BasicProgram
                 Console.WriteLine("9: For Prime Factor");
                 Console.WriteLine("10: For Check the given Alphabet is Vowel or Consonant");
                 Console.WriteLine("11: For Factorial");
+                Console.WriteLine("12: For Fibonacci Series");
                 Console.WriteLine("0: For Exit");
                 input = int.Parse(Console.ReadLine());
                 switch (input)
@@ -58,6 +59,9 @@ namespace BasicProgram
                         break;
                     case 11:
                         BasicCoreProgram.FactorialNumber();
+                        break;
+                    case 12:
+                        BasicCoreProgram.FibonacciSeries();
                         break;
                     case 0:
                         Console.WriteLine("Exit\n");

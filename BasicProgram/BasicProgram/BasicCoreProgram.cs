@@ -194,5 +194,21 @@ namespace BasicProgram
             }
             Console.WriteLine("Factorial of number: " + factorial);
         }
+        public static void FibonacciSeries()
+        {
+            int FirstNum = 0;
+            int SecondNum = 1;
+            int ThirdNum;
+            Console.WriteLine("Enter a number");
+            int Number = int.Parse(Console.ReadLine());
+            Console.WriteLine("The Fibonacci Series are: ");
+            for (int i = 0; i < Number; i++)
+            {
+                ThirdNum = FirstNum + SecondNum;
+                Console.WriteLine(ThirdNum + " ");
+                FirstNum = SecondNum;
+                SecondNum = ThirdNum;
+            }
+        }
     }
 }
