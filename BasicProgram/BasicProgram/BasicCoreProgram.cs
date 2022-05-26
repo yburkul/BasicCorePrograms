@@ -210,5 +210,17 @@ namespace BasicProgram
                 SecondNum = ThirdNum;
             }
         }
+        public static void QuotientAndRemainder()
+        {
+            int divident, divisor, quotient, remainder;
+            Console.WriteLine("Enter a Divident");
+            divident = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter a Divisor");
+            divisor = int.Parse(Console.ReadLine());
+            quotient = divident / divisor;
+            remainder = divident % divisor;
+            Console.WriteLine("Quotient: " + quotient);
+            Console.WriteLine("Remainder: " + remainder);
+        }
     }
 }
