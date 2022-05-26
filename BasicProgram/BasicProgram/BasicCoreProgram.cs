@@ -183,5 +183,16 @@ namespace BasicProgram
                 Console.WriteLine("Enter Letter is Consonant: " + Letter);
             }
         }
+        public static void FactorialNumber()
+        {
+            int factorial = 1;
+            Console.WriteLine("Enter a number");
+            int number = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= number; i++)
+            {
+                factorial = factorial * i;
+            }
+            Console.WriteLine("Factorial of number: " + factorial);
+        }
     }
 }
