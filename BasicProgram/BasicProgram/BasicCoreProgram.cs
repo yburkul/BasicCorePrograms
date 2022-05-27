@@ -222,5 +222,54 @@ namespace BasicProgram
             Console.WriteLine("Quotient: " + quotient);
             Console.WriteLine("Remainder: " + remainder);
         }
+        public static void MathOperation()
+        {
+            Console.WriteLine("Welcome in Basic Math Operations");
+            Console.WriteLine("Enter a First Number");
+            double FirstNumber = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter a Second Number");
+            double SecondNumber = Convert.ToDouble(Console.ReadLine());
+            int input;
+            do
+            {
+                Console.WriteLine("1: Addition");
+                Console.WriteLine("2: Subtraction");
+                Console.WriteLine("3: Multiplication");
+                Console.WriteLine("4: Divison");
+                Console.WriteLine("5: Avarage");
+                Console.WriteLine("0: Back to Main Method");
+                input = int.Parse(Console.ReadLine());
+                switch (input)
+                {
+                    case 1:
+                        double Sum = FirstNumber + SecondNumber;
+                        Console.WriteLine("Sum Of Two Numbers are {0}+{1} = {2} ",FirstNumber, SecondNumber, Sum);
+                        break;
+                    case 2:
+                        double Subtraction = FirstNumber - SecondNumber;
+                        Console.WriteLine("Subtraction of Two Number are {0}-{1} = {2}", FirstNumber, SecondNumber, Subtraction);
+                        break;
+                    case 3:
+                        double Multiplication = SecondNumber * FirstNumber;
+                        Console.WriteLine("Multiplication of Two Number is {0}*{1} = {2}", FirstNumber, SecondNumber, Multiplication);
+                        break;
+                    case 4:
+                        double Division = FirstNumber / SecondNumber;
+                        Console.WriteLine("Division of two number are {0}/{1} = {2}", FirstNumber, SecondNumber, Division);
+                        break;
+                    case 5:
+                        double Avarage = (FirstNumber + SecondNumber) / 2;
+                        Console.WriteLine("Avarge of Two Number is {0}*{1} / {2} ", FirstNumber, SecondNumber, Avarage);
+                        break;
+                    case 0:
+                        Console.WriteLine("Back to Main Method");
+                        break;
+                    default:
+                        Console.WriteLine("Invalid Input");
+                        break;
+                }
+            }
+            while (input != 0);
+        }
     }
 }
