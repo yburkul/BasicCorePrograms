@@ -285,5 +285,20 @@ namespace BasicProgram
                 Console.WriteLine("Entered Number is Not Divisible by 2");
             }
         }
+        public static void MultipleByGivenNumber()
+        {
+            int num, i;
+            Console.WriteLine("Enter the number to Multiples which are less than 100:");
+            int number = int.Parse(Console.ReadLine());
+            Console.WriteLine("Multiples of given number are : ");
+            for (i = 1; i < 100; i++)
+            {
+                num = i % number;
+                if (num == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
     }
 }
