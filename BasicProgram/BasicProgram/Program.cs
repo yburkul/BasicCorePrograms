@@ -25,6 +25,7 @@ namespace BasicProgram
                 Console.WriteLine("12: For Fibonacci Series");
                 Console.WriteLine("13: For Quotient And Remainder");
                 Console.WriteLine("14: For Basic Math Opertions");
+                Console.WriteLine("15: For Find the Number is Divisible by 2 or not");
                 Console.WriteLine("0: For Exit");
                 input = int.Parse(Console.ReadLine());
                 switch (input)
@@ -70,6 +71,9 @@ namespace BasicProgram
                         break;
                     case 14:
                         BasicCoreProgram.MathOperation();
+                        break;
+                    case 15:
+                        BasicCoreProgram.DivisibleByTwo();
                         break;
                     case 0:
                         Console.WriteLine("Exit\n");

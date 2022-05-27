@@ -271,5 +271,19 @@ namespace BasicProgram
             }
             while (input != 0);
         }
+        public static void DivisibleByTwo()
+        {
+            int number;
+            Console.WriteLine("Enter the Number:");
+            number = int.Parse(Console.ReadLine());
+            if (number % 2 == 0)
+            {
+                Console.WriteLine("Entered Number is Divisible by 2");
+            }
+            else
+            {
+                Console.WriteLine("Entered Number is Not Divisible by 2");
+            }
+        }
     }
 }
