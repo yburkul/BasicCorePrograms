@@ -28,6 +28,8 @@ namespace BasicProgram
                 Console.WriteLine("15: For Find the Number is Divisible by 2 or not");
                 Console.WriteLine("16: For Print all the Multiples of Given Number which are Less than 100");
                 Console.WriteLine("17: For Harmonic");
+                Console.WriteLine("18: For Sum Of Even Numbers");
+                Console.WriteLine("19: For Sum of Odd Numbers");
                 Console.WriteLine("0: For Exit");
                 input = int.Parse(Console.ReadLine());
                 switch (input)
@@ -85,6 +87,9 @@ namespace BasicProgram
                         break;
                     case 18:
                         BasicCoreProgram.SumOfEvenNumber();                       
+                        break;
+                    case 19:
+                        BasicCoreProgram.SumOfOddNumber();
                         break;
                     case 0:
                         Console.WriteLine("Exit\n");

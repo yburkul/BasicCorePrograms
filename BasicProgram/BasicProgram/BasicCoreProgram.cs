@@ -322,5 +322,16 @@ namespace BasicProgram
             }
             Console.Write($"Sum of even numbers from 1 to {Number} is : {sum}");
         }
+        public static void SumOfOddNumber()
+        {
+            int Sum = 0;
+            Console.WriteLine("Enter a Number: ");
+            int Number = int.Parse(Console.ReadLine());
+            for(int i = 1; i <= Number; i += 2)
+            {
+                Sum += i;
+            }
+            Console.Write($"Sum of Odd numbers from 1 to {Number} is : {Sum}");
+        }
     }
 }
