@@ -83,6 +83,9 @@ namespace BasicProgram
                     case 17:
                         BasicCoreProgram.Harmonic();
                         break;
+                    case 18:
+                        BasicCoreProgram.SumOfEvenNumber();                       
+                        break;
                     case 0:
                         Console.WriteLine("Exit\n");
                         break;

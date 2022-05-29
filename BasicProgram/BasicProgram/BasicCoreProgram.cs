@@ -311,5 +311,16 @@ namespace BasicProgram
             }
             Console.WriteLine("The Harmonic Series Sum: " + sum);
         }
+        public static void SumOfEvenNumber()
+        {
+            int sum = 0;
+            Console.Write("Enter a Number:");
+            int Number = int.Parse(Console.ReadLine());
+            for (int i = 2; i <= Number; i += 2)
+            {
+                sum += i;
+            }
+            Console.Write($"Sum of even numbers from 1 to {Number} is : {sum}");
+        }
     }
 }
