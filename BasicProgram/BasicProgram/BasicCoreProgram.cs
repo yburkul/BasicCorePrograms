@@ -259,7 +259,7 @@ namespace BasicProgram
                         break;
                     case 5:
                         double Avarage = (FirstNumber + SecondNumber) / 2;
-                        Console.WriteLine("Avarge of Two Number is {0}*{1} / {2} ", FirstNumber, SecondNumber, Avarage);
+                        Console.WriteLine("Avarge of Two Number is ({0}+{1}) / 2 = {2} ", FirstNumber, SecondNumber, Avarage);
                         break;
                     case 0:
                         Console.WriteLine("Back to Main Method");
@@ -299,6 +299,17 @@ namespace BasicProgram
                     Console.WriteLine(i);
                 }
             }
+        }
+        public static void Harmonic()
+        {
+            double sum = 0.0;
+            Console.WriteLine("Enter a Number");
+            int num = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <num; i++)
+            {
+                sum += 1 / (float)i;
+            }
+            Console.WriteLine("The Harmonic Series Sum: " + sum);
         }
     }
 }

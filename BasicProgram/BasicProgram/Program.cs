@@ -27,6 +27,7 @@ namespace BasicProgram
                 Console.WriteLine("14: For Basic Math Opertions");
                 Console.WriteLine("15: For Find the Number is Divisible by 2 or not");
                 Console.WriteLine("16: For Print all the Multiples of Given Number which are Less than 100");
+                Console.WriteLine("17: For Harmonic");
                 Console.WriteLine("0: For Exit");
                 input = int.Parse(Console.ReadLine());
                 switch (input)
@@ -78,6 +79,9 @@ namespace BasicProgram
                         break;
                     case 16:
                         BasicCoreProgram.MultipleByGivenNumber();
+                        break;
+                    case 17:
+                        BasicCoreProgram.Harmonic();
                         break;
                     case 0:
                         Console.WriteLine("Exit\n");
